@@ -1,0 +1,52 @@
+{
+	"name": "airform",
+	"version": "0.0.1",
+	"description": "Functional HTML forms for Front-End Developers.",
+	"homepage": "https://airform.io",
+	"repository": "airform/airform",
+	"license": "MIT",
+	"author": "CJ Patoilo <cjpatoilo@gmail.com>",
+	"main": "readme.md",
+	"keywords": [
+		"automation",
+		"deploy",
+		"deployment",
+		"growth",
+		"implementation",
+		"performance",
+		"progress",
+		"rescue",
+		"rollback",
+		"save",
+		"safety"
+	],
+	"ignore": [
+		"artwork.psd",
+		".appveyor.yml",
+		".editorconfig",
+		".github",
+		".gitignore",
+		".travis.yml"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"ava": "^0.25.0",
+		"boeing": "^0.1.1",
+		"editorconfig-tools": "^0.1.1",
+		"eslint": "^4.18.0",
+		"eslint-config-styled": "latest",
+		"husky": "^0.14.3",
+		"inject-ga": "^0.2.4",
+		"marshmallow": "latest",
+		"nyc": "^11.4.1",
+		"rimraf": "^2.6.2"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"deploy": "marshmallow -o dist -i artwork.psd -t 'Airform' -d 'Functional HTML forms for Front-End Developers.' -f -m && inject-ga dist/index.html -o dist/index.html -c 'UA-24389952-13' && boeing dist && rimraf dist",
+		"precommit": "npm t",
+		"test": "nyc ava && eslint . -c styled --ignore-path .gitignore && editorconfig-tools check ."
+	}
+}
