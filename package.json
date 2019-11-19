@@ -8,16 +8,19 @@
   "author": "CJ Patoilo <cjpatoilo@gmail.com>",
   "private": true,
   "keywords": [
-    "serverless",
-    "sendmail",
-    "mailer",
+    "🐥",
+    "airform",
     "html-forms",
     "forms",
-    "smtp",
-    "airform",
-    "sendgrid",
     "mailchimp",
-    "mailgun"
+    "mailer",
+    "mailgun",
+    "saas",
+    "sendgrid",
+    "sendmail",
+    "serverless",
+    "smtp",
+    "software-as-a-service"
   ],
   "dependencies": {},
   "devDependencies": {
@@ -26,7 +29,7 @@
     "prettier-standard": "^15.0.1"
   },
   "scripts": {
-    "lint": "prettier-standard --check"
+    "lint": "prettier-standard --format"
   },
   "engines": {
     "node": "^12.13.0",

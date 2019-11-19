@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Functional HTML forms for React Developers.",
   "homepage": "https://airform.io",
-  "repository": "airform/airform/blob/master/packages/react-airform",
+  "repository": "airform/airform",
   "license": "MIT",
   "author": "CJ Patoilo <cjpatoilo@gmail.com>",
   "private": false,
@@ -16,12 +16,11 @@
   "keywords": [
     "🐥",
     "airform",
-    "html-form",
+    "html-forms",
     "forms",
     "mailchimp",
     "mailer",
     "mailgun",
-    "react",
     "saas",
     "sendgrid",
     "sendmail",
@@ -31,8 +30,7 @@
   ],
   "ignore": [
     ".gitignore",
-    ".cache",
-    "dist"
+    ".cache"
   ],
   "dependencies": {
     "react": "^16.11.0"
@@ -43,7 +41,9 @@
     "@types/react-dom": "^16.9.2",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
+    "parcel": "^1.12.4",
     "prettier-standard": "^15.0.1",
+    "react-app-polyfill": "^1.0.4",
     "react-dom": "^16.11.0",
     "tsdx": "^0.10.5",
     "tslib": "^1.10.0",
@@ -54,12 +54,14 @@
   },
   "scripts": {
     "build": "tsdx build --entry index.tsx",
+    "dev": "tsdx watch --entry index.tsx && parcel example.html",
     "lint": "prettier-standard --check",
-    "start": "tsdx watch --entry index.tsx",
+    "server": "parcel example.html",
     "test": "tsdx test --env=jsdom"
   },
   "engines": {
-    "node": "^12.13.0"
+    "node": "^12.13.0",
+    "npm": "^6.13.0"
   },
   "prettier": {
     "jsxSingleQuote": false,

@@ -8,7 +8,7 @@ What if you could use a service that gives you full control over the form, yet d
 
 ## Usage
 
-```
+```jsx
 import Airform from 'react-airform'
 
 <Airform email="your@email.com">
