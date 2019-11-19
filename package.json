@@ -8,16 +8,19 @@
   "author": "CJ Patoilo <cjpatoilo@gmail.com>",
   "private": true,
   "keywords": [
-    "serverless",
-    "sendmail",
-    "mailer",
+    "🐥",
+    "airform",
     "html-forms",
     "forms",
-    "smtp",
-    "airform",
-    "sendgrid",
     "mailchimp",
-    "mailgun"
+    "mailer",
+    "mailgun",
+    "saas",
+    "sendgrid",
+    "sendmail",
+    "serverless",
+    "smtp",
+    "software-as-a-service"
   ],
   "dependencies": {},
   "devDependencies": {
