@@ -1,6 +1,6 @@
-<a align="center" href="https://github.com/airform/airform"><img width="100%" src="https://repository-images.githubusercontent.com/129330207/bb063280-031a-11ea-84bc-ecf928314143" alt="Airform - Functional HTML forms for React Developers."></a>
+<a align="center" href="https://github.com/airform/airform"><img width="100%" src="https://repository-images.githubusercontent.com/129330207/bb063280-031a-11ea-84bc-ecf928314143" alt="Airform - Functional HTML forms for Vue Developers."></a>
 
-> Functional HTML forms for React Developers.
+> Functional HTML forms for Vue Developers.
 
 ## Why it's awesome
 
@@ -9,7 +9,7 @@ What if you could use a service that gives you full control over the form, yet d
 ## Usage
 
 ```jsx
-import Airform from 'react-airform'
+import Airform from 'vue-airform'
 
 <Airform email="your@email.com">
   <input type="text" name="name">

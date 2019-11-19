@@ -1,7 +1,7 @@
 import 'react-app-polyfill/ie11'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Airform from '../'
+import Airform from './'
 
 const App = () => (
   <Airform email="cjpatoilo@gmail.com">
