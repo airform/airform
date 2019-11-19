@@ -12,7 +12,7 @@ What if you could use a service that gives you full control over the form, yet d
 import Airform from 'react-airform'
 
 <Airform email="your@email.com">
-  <input type="text" name="name">
+  <input type="text" name="name" />
   <textarea name="message"></textarea>
   <button>Send</button>
 </Airform>

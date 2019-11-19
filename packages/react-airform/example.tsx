@@ -6,7 +6,7 @@ import Airform from './'
 const App = () => (
   <Airform email="cjpatoilo@gmail.com">
     <input type="text" name="name" />
-    <textarea name="message" />
+    <textarea name="message"></textarea>
     <button>Send</button>
   </Airform>
 )
