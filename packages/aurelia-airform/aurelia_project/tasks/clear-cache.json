@@ -1,0 +1,4 @@
+{
+  "name": "clear-cache",
+  "description": "Clear both transpile cache (only for esnext), and tracing-cache (for CLI built-in tracer)."
+}
