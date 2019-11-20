@@ -28,12 +28,9 @@
     "software-as-a-service"
   ],
   "ignore": [
-    ".gitignore",
     "*.log",
     ".DS_Store",
-    ".env*",
-    "dist",
-    "node_modules"
+    ".cache"
   ],
   "dependencies": {
     "vue": "^2.6.10"
@@ -49,9 +46,7 @@
     "lint-staged": "^9.4.3",
     "parcel": "^1.12.4",
     "prettier-standard": "^15.0.1",
-    "pug": "^2.0.4",
     "rimraf": "^3.0.0",
-    "sass": "^1.23.6",
     "typescript": "~3.5.3",
     "vue-template-compiler": "^2.6.10"
   },
