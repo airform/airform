@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "module": "amd",
+    "noImplicitAny": false,
+    "declaration": true,
+    "typeRoots": ["./node_modules/@types"],
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "target": "es5",
+    "lib": ["es2015", "dom"],
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "baseUrl": "src",
+    "resolveJsonModule": true,
+    "paths": {
+      "resources": [""]
+    },
+    "allowJs": false
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./example/**/*.ts",
+    "./test/**/*.ts",
+    "./types/**/*.d.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": false
+  }
+}
