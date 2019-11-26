@@ -1,0 +1,79 @@
+{
+  "name": "ng-airform",
+  "version": "0.0.0",
+  "description": "Functional HTML forms for AngularJS Developers.",
+  "homepage": "https://airform.io",
+  "repository": "airform/airform",
+  "license": "MIT",
+  "author": "CJ Patoilo <cjpatoilo@gmail.com>",
+  "private": false,
+  "main": "dist/ng-airform.cjs.js",
+  "module": "dist/ng-airform.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "🐥",
+    "airform",
+    "html-forms",
+    "forms",
+    "mailchimp",
+    "mailer",
+    "mailgun",
+    "saas",
+    "sendgrid",
+    "sendmail",
+    "serverless",
+    "smtp",
+    "software-as-a-service"
+  ],
+  "ignore": [
+    "*.log",
+    ".DS_Store",
+    ".cache"
+  ],
+  "dependencies": {
+    "angular": "~1.7.9",
+    "angular-sanitize": "~1.7.9"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.7.9",
+    "angularjs-jest": "^0.1.4",
+    "husky": "^3.0.9",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.4.2",
+    "parcel-bundler": "^1.12.4",
+    "prettier-standard": "^15.0.1",
+    "typescript": "^3.7.2"
+  },
+  "peerDependencies": {
+    "angular": "~1.7.9",
+    "angular-sanitize": "~1.7.9"
+  },
+  "scripts": {
+    "build": "",
+    "lint": "prettier-standard --check",
+    "server": "parcel example.html --open",
+    "test": "jest"
+  },
+  "engines": {
+    "node": "^12.13.0",
+    "npm": "^6.13.0"
+  },
+  "prettier": {
+    "jsxSingleQuote": false,
+    "trailingComma": "all"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": [
+      "prettier-standard --format",
+      "git add"
+    ]
+  }
+}
