@@ -33,6 +33,7 @@ What if you could use a service that gives you full control over the form, yet d
 ## Packages
 
 - [Angular Component](https://github.com/airform/airform/tree/master/packages/angular-airform)
+- [AngularJS Component](https://github.com/airform/airform/tree/master/packages/ng-airform)
 - [Aurelia Component](https://github.com/airform/airform/tree/master/packages/aurelia-airform)
 - [React Component](https://github.com/airform/airform/tree/master/packages/react-airform)
 - [Vue Component](https://github.com/airform/airform/tree/master/packages/vue-airform)
