@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input, NgModule } from '@angular/core'
 
 // export type AirformInterface = {
 //   email?: string
@@ -19,3 +19,8 @@ export class AirformComponent {
   @Input()
   email: String = 'your@gmail.com'
 }
+
+@NgModule({
+  declarations: [AirformComponent],
+})
+export class AirformModule {}
