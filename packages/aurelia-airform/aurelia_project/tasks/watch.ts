@@ -5,8 +5,6 @@ import * as debounce from 'debounce'
 import * as project from '../aurelia.json'
 import transpile from './transpile'
 import processMarkup from './process-markup'
-import processCSS from './process-css'
-import processJson from './process-json'
 import copyFiles from './copy-files'
 import { build } from 'aurelia-cli'
 
@@ -21,8 +19,6 @@ let watches = [
     callback: processMarkup,
     source: project.markupProcessor.source,
   },
-  { name: 'CSS', callback: processCSS, source: project.cssProcessor.source },
-  { name: 'JSON', callback: processJson, source: project.jsonProcessor.source },
 ]
 
 if (typeof project.build.copyFiles === 'object') {

@@ -1,38 +1,7 @@
 <template>
-  <require from="./app.css"></require>
-  <require from="./air-header.html"></require>
-  <require from="./air-footer.html"></require>
-
-  <require from="./usage"></require>
-
-  <div class="Page">
-    <air-header></air-header>
-
-    <usage>
-      <airform email.bind="email">
-        <p>
-          <input
-            type="text"
-            name="email"
-            value.bind="email"
-            placeholder="Enter your email"
-          />
-        </p>
-        <p>
-          <input type="text" name="name" placeholder="Enter your name" />
-        </p>
-        <p>
-          <textarea
-            name="message"
-            value.bind="message"
-            placeholder="Enter your message"
-          ></textarea>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </airform>
-    </usage>
-    <air-footer></air-footer>
-  </div>
+  <airform email="your@email.com">
+    <input type="text" name="name" />
+    <textarea name="message"></textarea>
+    <button>Send</button>
+  </airform>
 </template>

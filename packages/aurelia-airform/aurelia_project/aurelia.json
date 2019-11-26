@@ -4,10 +4,7 @@
   "paths": {
     "root": "example",
     "resources": "../src",
-    "elements": "../src/elements",
-    "attributes": "../src/attributes",
-    "valueConverters": "../src/value-converters",
-    "bindingBehaviors": "../src/binding-behaviors"
+    "elements": "../src/elements"
   },
   "transpiler": {
     "id": "typescript",
@@ -18,35 +15,30 @@
   "plugin": {
     "source": {
       "js": "src/**/*.ts",
-      "css": "src/**/*.css",
-      "html": "src/**/*.html",
-      "json": "src/**/*.json"
+      "html": "src/**/*.html"
     }
   },
   "markupProcessor": {
     "source": ["example/**/*.html", "src/**/*.html"]
   },
-  "cssProcessor": {
-    "source": ["example/**/*.css", "src/**/*.css"]
-  },
   "jsonProcessor": {
     "source": ["example/**/*.json", "src/**/*.json"]
   },
   "platform": {
-    "port": 9000,
+    "port": 1234,
     "host": "localhost",
-    "open": false,
+    "open": true,
     "index": "index.html",
-    "baseDir": ".",
-    "output": "scripts"
+    "baseDir": "./",
+    "output": ".cache"
   },
   "build": {
     "targets": [
       {
-        "port": 9000,
+        "port": 1234,
         "index": "index.html",
-        "baseDir": ".",
-        "output": "scripts"
+        "baseDir": "./",
+        "output": ".cache"
       }
     ],
     "options": {
@@ -58,7 +50,7 @@
     "bundles": [
       {
         "name": "app-bundle.js",
-        "source": ["**/*.{js,json,css,html}"]
+        "source": ["**/*.{js,html}"]
       },
       {
         "name": "vendor-bundle.js",
@@ -85,7 +77,7 @@
       "plugins": [
         {
           "name": "text",
-          "extensions": [".html", ".css"],
+          "extensions": [".html"],
           "stub": false
         }
       ]

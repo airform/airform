@@ -7,8 +7,9 @@
   "license": "MIT",
   "author": "Abraão Alves <abraao.teodosio@gmail.com>",
   "private": false,
-  "main": "dist/commonjs/index.js",
-  "module": "dist/native-modules/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "typing": "dist/esm/elements/index.d.js",
   "files": [
     "dist"
   ],
@@ -35,8 +36,7 @@
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^24.0.9",
-    "@types/node": "^10.11.6",
-    "aurelia-animator-css": "^1.0.4",
+    "@types/node": "^12.12.14",
     "aurelia-bootstrapper": "^2.3.2",
     "aurelia-cli": "^1.0.2",
     "aurelia-loader-nodejs": "^1.0.1",
@@ -46,7 +46,7 @@
     "browser-sync": "^2.26.3",
     "connect-history-api-fallback": "^1.6.0",
     "debounce": "^1.2.0",
-    "del": "^3.0.0",
+    "del": "^5.1.0",
     "gulp": "^4.0.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
@@ -75,7 +75,7 @@
     "build": "au build-plugin",
     "lint": "prettier-standard --check",
     "server": "au run",
-    "test": "au test"
+    "test": "jest"
   },
   "engines": {
     "node": "^12.13.0",

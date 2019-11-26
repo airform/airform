@@ -1,6 +1,6 @@
-<a align="center" href="https://github.com/airform/airform"><img width="100%" src="https://repository-images.githubusercontent.com/129330207/bb063280-031a-11ea-84bc-ecf928314143" alt="Airform - Functional HTML forms for React Developers."></a>
+<a align="center" href="https://github.com/airform/airform"><img width="100%" src="https://repository-images.githubusercontent.com/129330207/bb063280-031a-11ea-84bc-ecf928314143" alt="Airform - Functional HTML forms for Aurelia Developers."></a>
 
-> Functional HTML forms for React Developers.
+> Functional HTML forms for Aurelia Developers.
 
 ## Why it's awesome
 
@@ -9,13 +9,12 @@ What if you could use a service that gives you full control over the form, yet d
 ## Usage
 
 ```jsx
-import Airform from 'react-airform'
-
-;<Airform email="your@email.com">
+import airform from 'aurelia-airform'
+;<airform email="your@email.com">
   <input type="text" name="name" />
   <textarea name="message" />
   <button>Send</button>
-</Airform>
+</airform>
 ```
 
 **Quick Tip:** The `email` attribute defines the email that will receive the form's collected data when it is submitted. The `method` attribute is `post` by default. All `input`, `select`, `textarea` elements whitin your form should have a `name` attribute.

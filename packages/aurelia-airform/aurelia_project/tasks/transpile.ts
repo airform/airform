@@ -6,7 +6,7 @@ import * as ts from 'gulp-typescript'
 import * as project from '../aurelia.json'
 import * as fs from 'fs'
 import * as through from 'through2'
-import { CLIOptions, build, Configuration } from 'aurelia-cli'
+import { CLIOptions, build } from 'aurelia-cli'
 import * as gulpSourcemaps from 'gulp-sourcemaps'
 
 function configureEnvironment () {
