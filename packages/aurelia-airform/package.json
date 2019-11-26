@@ -1,16 +1,42 @@
 {
   "name": "aurelia-airform",
-  "description": "An Aurelia plugin Aurelia Developers.",
-  "version": "0.1.0",
+  "version": "0.0.1",
+  "description": "Functional HTML forms for Aurelia Developers.",
   "homepage": "https://airform.io",
-  "repository": "airform/airform/blob/master/packages/aurelia-airform",
+  "repository": "airform/airform",
+  "license": "MIT",
   "author": "Abraão Alves <abraao.teodosio@gmail.com>",
   "private": false,
-  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "typing": "dist/esm/elements/index.d.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "🐥",
+    "airform",
+    "html-forms",
+    "forms",
+    "mailchimp",
+    "mailer",
+    "mailgun",
+    "saas",
+    "sendgrid",
+    "sendmail",
+    "serverless",
+    "smtp",
+    "software-as-a-service"
+  ],
+  "ignore": [
+    "*.log",
+    ".DS_Store",
+    ".cache"
+  ],
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^24.0.9",
-    "@types/node": "^10.11.6",
-    "aurelia-animator-css": "^1.0.4",
+    "@types/node": "^12.12.14",
     "aurelia-bootstrapper": "^2.3.2",
     "aurelia-cli": "^1.0.2",
     "aurelia-loader-nodejs": "^1.0.1",
@@ -20,82 +46,74 @@
     "browser-sync": "^2.26.3",
     "connect-history-api-fallback": "^1.6.0",
     "debounce": "^1.2.0",
-    "del": "^3.0.0",
+    "del": "^5.1.0",
     "gulp": "^4.0.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-tslint": "^8.1.4",
     "gulp-typescript": "^5.0.0",
     "gulp-watch": "^5.0.1",
+    "husky": "^3.1.0",
     "jest": "^24.1.0",
     "jest-cli": "^24.1.0",
     "jest-transform-stub": "^2.0.0",
+    "lint-staged": "^9.4.3",
     "minimatch": "^3.0.4",
+    "prettier-standard": "^15.0.1",
     "promise-polyfill": "^8.1.0",
     "requirejs": "^2.3.6",
     "text": "requirejs/text#latest",
     "through2": "^3.0.0",
     "ts-jest": "^24.0.0",
     "tslib": "^1.10.0",
-    "tslint": "^5.13.0",
     "typescript": "^3.1.2",
     "vinyl-fs": "^3.0.3"
   },
+  "peerDependencies": {},
   "scripts": {
     "build": "au build-plugin",
-    "dev": "au run",
-    "watch": "au build-plugin --watch",
-    "prepare": "npm run build",
-    "pretest": "au lint",
-    "preversion": "au test",
-    "test": "au test"
+    "lint": "prettier-standard --check",
+    "server": "au run",
+    "test": "jest"
   },
   "engines": {
-    "node": ">=8.9.0"
+    "node": "^12.13.0",
+    "npm": "^6.13.0"
   },
-  "main": "dist/commonjs/index.js",
-  "module": "dist/native-modules/index.js",
-  "files": [
-    "dist",
-    "src"
-  ],
+  "prettier": {
+    "jsxSingleQuote": false,
+    "trailingComma": "all"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": [
+      "prettier-standard --format",
+      "git add"
+    ]
+  },
   "jest": {
     "moduleNameMapper": {
       "^aurelia-binding$": "<rootDir>/node_modules/aurelia-binding"
     },
     "modulePaths": [
-      "<rootDir>/src",
-      "<rootDir>/node_modules"
+      "<rootDir>/node_modules",
+      "<rootDir>/src"
     ],
     "moduleFileExtensions": [
-      "ts",
       "js",
-      "json"
+      "json",
+      "ts"
     ],
     "transform": {
       "^.+\\.(css|less|sass|scss|styl|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "jest-transform-stub",
       "^.+\\.ts$": "ts-jest"
     },
-    "testRegex": "\\.spec\\.(ts|js)$",
-    "setupFiles": [
-      "<rootDir>/test/jest-pretest.ts"
-    ],
-    "testEnvironment": "node",
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "src/**/*.{js,ts}",
-      "!**/*.spec.{js,ts}",
-      "!**/node_modules/**",
-      "!**/test/**"
-    ],
-    "coverageDirectory": "<rootDir>/test/coverage-jest",
-    "coverageReporters": [
-      "json",
-      "lcov",
-      "text",
-      "html"
-    ]
+    "testRegex": "\\.test\\.(ts|js)$",
+    "testEnvironment": "node"
   }
 }

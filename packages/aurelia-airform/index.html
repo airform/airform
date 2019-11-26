@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Aurelia Airform Playground</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -26,11 +22,12 @@
         max-width: 60rem;
       }
     </style>
+    <title>Airform Playground</title>
   </head>
-
-  <body aurelia-app="main" class="container">
+  <body class="container">
+    <div aurelia-app="main"></div>
     <script
-      src="scripts/vendor-bundle.js"
+      src=".cache/vendor-bundle.js"
       data-main="aurelia-bootstrapper"
     ></script>
   </body>
