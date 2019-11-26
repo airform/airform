@@ -20,12 +20,7 @@
     },
     "allowJs": false
   },
-  "include": [
-    "./src/**/*.ts",
-    "./example/**/*.ts",
-    "./test/**/*.ts",
-    "./types/**/*.d.ts"
-  ],
+  "include": ["./src/**/*.ts", "./example/**/*.ts", "./types/**/*.d.ts"],
   "atom": {
     "rewriteTsconfig": false
   }

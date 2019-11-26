@@ -73,9 +73,8 @@
   "peerDependencies": {},
   "scripts": {
     "build": "au build-plugin",
-    "dev": "au run",
     "lint": "prettier-standard --check",
-    "watch": "au build-plugin --watch",
+    "server": "au run",
     "test": "au test"
   },
   "engines": {
@@ -102,36 +101,19 @@
       "^aurelia-binding$": "<rootDir>/node_modules/aurelia-binding"
     },
     "modulePaths": [
-      "<rootDir>/src",
-      "<rootDir>/node_modules"
+      "<rootDir>/node_modules",
+      "<rootDir>/src"
     ],
     "moduleFileExtensions": [
-      "ts",
       "js",
-      "json"
+      "json",
+      "ts"
     ],
     "transform": {
       "^.+\\.(css|less|sass|scss|styl|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "jest-transform-stub",
       "^.+\\.ts$": "ts-jest"
     },
-    "testRegex": "\\.spec\\.(ts|js)$",
-    "setupFiles": [
-      "<rootDir>/test/jest-pretest.ts"
-    ],
-    "testEnvironment": "node",
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "src/**/*.{js,ts}",
-      "!**/*.spec.{js,ts}",
-      "!**/node_modules/**",
-      "!**/test/**"
-    ],
-    "coverageDirectory": "<rootDir>/test/coverage-jest",
-    "coverageReporters": [
-      "json",
-      "lcov",
-      "text",
-      "html"
-    ]
+    "testRegex": "\\.test\\.(ts|js)$",
+    "testEnvironment": "node"
   }
 }

@@ -1,5 +1,7 @@
 *.log
 .DS_Store
 .cache
+coverage
 dist
 node_modules
+scripts
