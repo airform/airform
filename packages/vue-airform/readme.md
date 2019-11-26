@@ -9,13 +9,13 @@ What if you could use a service that gives you full control over the form, yet d
 ## Usage
 
 ```jsx
-import Airform from 'vue-airform'
+import airform from 'vue-airform'
 
-<Airform email="your@email.com">
+<airform email="your@email.com">
   <input type="text" name="name" />
   <textarea name="message"></textarea>
   <button>Send</button>
-</Airform>
+</airform>
 ```
 
 **Quick Tip:** The `email` attribute defines the email that will receive the form's collected data when it is submitted. The `method` attribute is `post` by default. All `input`, `select`, `textarea` elements whitin your form should have a `name` attribute.
@@ -31,6 +31,13 @@ import Airform from 'vue-airform'
 - More Productivity
 - Web Standards
 - Open Source
+
+## Packages
+
+- [Angular Component](https://github.com/airform/airform/tree/master/packages/angular-airform)
+- [Aurelia Component](https://github.com/airform/airform/tree/master/packages/aurelia-airform)
+- [React Component](https://github.com/airform/airform/tree/master/packages/react-airform)
+- [Vue Component](https://github.com/airform/airform/tree/master/packages/vue-airform)
 
 ## Contributing
 

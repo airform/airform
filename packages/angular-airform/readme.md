@@ -9,11 +9,11 @@ What if you could use a service that gives you full control over the form, yet d
 ## Usage
 
 ```jsx
-import AirformComponent from 'angular-airform'
+import { AirformComponent } from 'angular-airform'
 
-;<airform email="your@email.com">
+<airform email="your@email.com">
   <input type="text" name="name" />
-  <textarea name="message" />
+  <textarea name="message"></textarea>
   <button>Send</button>
 </airform>
 ```
@@ -31,6 +31,13 @@ import AirformComponent from 'angular-airform'
 - More Productivity
 - Web Standards
 - Open Source
+
+## Packages
+
+- [Angular Component](https://github.com/airform/airform/tree/master/packages/angular-airform)
+- [Aurelia Component](https://github.com/airform/airform/tree/master/packages/aurelia-airform)
+- [React Component](https://github.com/airform/airform/tree/master/packages/react-airform)
+- [Vue Component](https://github.com/airform/airform/tree/master/packages/vue-airform)
 
 ## Contributing
 
