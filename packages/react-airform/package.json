@@ -29,7 +29,8 @@
     "software-as-a-service"
   ],
   "ignore": [
-    ".gitignore",
+    "*.log",
+    ".DS_Store",
     ".cache"
   ],
   "dependencies": {
