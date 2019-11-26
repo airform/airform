@@ -1,5 +1,5 @@
-import { bindable } from "aurelia-framework";
+import { bindable } from 'aurelia-framework'
 
 export class Airform {
-  @bindable email: string;
+  @bindable email: string
 }

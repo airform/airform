@@ -1,10 +1,10 @@
-import { autoinject } from "aurelia-framework";
+import { autoinject } from 'aurelia-framework'
 
 @autoinject
 export class Usage {
-  constructor(public element: Element) {}
+  constructor (public element: Element) {}
 
-  attached() {
-    console.log(this.element);
+  attached () {
+    console.log(this.element)
   }
 }

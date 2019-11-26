@@ -1,25 +1,24 @@
-import { StageComponent, ComponentTester } from "aurelia-testing";
-import { bootstrap } from "aurelia-bootstrapper";
+import { bootstrap } from 'aurelia-bootstrapper'
+import { StageComponent, ComponentTester } from 'aurelia-testing'
 
-describe("airform element", () => {
-  let component: ComponentTester<{ email: string }>;
+describe('Airform', () => {
+  let component: ComponentTester<{ email: string }>
 
   afterEach(() => {
     if (component) {
-      component.dispose();
-      component = null;
+      component.dispose()
+      component = null
     }
-  });
+  })
 
-  it("says hello world to airform", async () => {
-    component = StageComponent.withResources("elements/airform").inView(
-      '<airform email="abraao@mail.com">Hello world from me</airform>'
-    );
+  it('renders without crashing', async () => {
+    component = StageComponent.withResources('elements/airform').inView(
+      '<airform email="your@email.com"></airform>',
+    )
 
-    await component.create(bootstrap);
+    await component.create(bootstrap)
 
-    const view = component.element;
-    expect(view.textContent.trim()).toBe("Hello world from me");
-    expect(view.getAttribute("email")).toContain("abraao@mail.com");
-  });
-});
+    const view = component.element
+    expect(view.getAttribute('email')).toContain('your@email.com')
+  })
+})

@@ -91,5 +91,5 @@
       ]
     }
   },
-  "packageManager": "yarn"
+  "packageManager": "npm"
 }

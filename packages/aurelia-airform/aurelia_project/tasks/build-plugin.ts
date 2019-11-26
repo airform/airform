@@ -1,13 +1,13 @@
-import * as gulp from 'gulp';
-import * as del from 'del';
-import { pluginMarkup } from './process-markup';
-import { pluginCSS } from './process-css';
-import { pluginJson } from './process-json';
-import { buildPluginJavaScript } from './transpile';
-import { CLIOptions } from 'aurelia-cli';
+import * as gulp from 'gulp'
+import * as del from 'del'
+import { pluginMarkup } from './process-markup'
+import { pluginCSS } from './process-css'
+import { pluginJson } from './process-json'
+import { buildPluginJavaScript } from './transpile'
+import { CLIOptions } from 'aurelia-cli'
 
-function clean() {
-  return del('dist');
+function clean () {
+  return del('dist')
 }
 
 let build = gulp.series(
@@ -23,26 +23,23 @@ let build = gulp.series(
     pluginCSS('dist/commonjs'),
     pluginJson('dist/commonjs'),
     buildPluginJavaScript('dist/commonjs', 'commonjs'),
-  ), (done) => {
-    console.log('Finish building Aurelia plugin to dist/commonjs and dist/native-modules.');
-    done();
-  }
-);
+  ),
+  done => {
+    console.log(
+      'Finish building Aurelia plugin to dist/commonjs and dist/native-modules.',
+    )
+    done()
+  },
+)
 
-let main;
+let main
 if (CLIOptions.hasFlag('watch')) {
-  main = gulp.series(
-    clean,
-    () => {
-      console.log('Watching plugin sources for changes ...');
-      return gulp.watch('src/**/*', { ignoreInitial: false }, build);
-    }
-  );
+  main = gulp.series(clean, () => {
+    console.log('Watching plugin sources for changes ...')
+    return gulp.watch('src/**/*', { ignoreInitial: false }, build)
+  })
 } else {
-  main = gulp.series(
-    clean,
-    build
-  );
+  main = gulp.series(clean, build)
 }
 
-export { main as default };
+export { main as default }
