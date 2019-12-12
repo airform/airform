@@ -1,7 +1,7 @@
 import angular from 'angular'
 import './'
 
-angular.module('root', ['ngAirform']).component('root', {
+angular.module('myApp', ['ngAirform']).component('myComponent', {
   template: `
     <airform email="your@email.com">
       <input type="text" name="name" />

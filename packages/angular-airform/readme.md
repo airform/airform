@@ -6,13 +6,33 @@
 
 What if you could use a service that gives you full control over the form, yet doesn’t require you to use anything on your server? Airform gives you the ability to create functional HTML forms without thinking about servers.
 
+## Getting Started
+
+**Install with npm**
+
+```
+$ npm install angular-airform
+```
+
+**Install with Yarn**
+
+```
+$ yarn add angular-airform
+```
+
+**Install with Bower**
+
+```
+$ bower install angular-airform
+```
+
 ## Usage
 
 ```jsx
 import { AirformComponent } from 'angular-airform'
 
 <airform email="your@email.com">
-  <input type="text" name="name" />
+  <input name="name" type="text"/>
   <textarea name="message"></textarea>
   <button>Send</button>
 </airform>
@@ -23,22 +43,22 @@ import { AirformComponent } from 'angular-airform'
 ## Features
 
 - No Server Management
-- Automated High Availabilty
+- Automated High Availability
 - Zero-Configuration
 - Safe Ship Mode
 - Unlimited Form Submissions
-- Cross Platform Support
+- Cross-Platform Support
 - More Productivity
 - Web Standards
 - Open Source
 
-## Packages
+## Extensions
 
-- [Angular Component](https://github.com/airform/airform/tree/master/packages/angular-airform)
-- [AngularJS Component](https://github.com/airform/airform/tree/master/packages/ng-airform)
-- [Aurelia Component](https://github.com/airform/airform/tree/master/packages/aurelia-airform)
-- [React Component](https://github.com/airform/airform/tree/master/packages/react-airform)
-- [Vue Component](https://github.com/airform/airform/tree/master/packages/vue-airform)
+- [Functional HTML forms for Angular Developers](https://github.com/airform/airform/tree/master/packages/angular-airform)
+- [Functional HTML forms for AngularJS Developers](https://github.com/airform/airform/tree/master/packages/ng-airform)
+- [Functional HTML forms for Aurelia Developers](https://github.com/airform/airform/tree/master/packages/aurelia-airform)
+- [Functional HTML forms for React Developers](https://github.com/airform/airform/tree/master/packages/react-airform)
+- [Functional HTML forms for Vue Developers](https://github.com/airform/airform/tree/master/packages/vue-airform)
 
 ## Contributing
 

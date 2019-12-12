@@ -9,34 +9,34 @@ What if you could use a service that gives you full control over the form, yet d
 ## Usage
 
 ```
-<form method="post" action="https://airform.io/your@email.com">
-  <input type="text" name="name">
+<form action="https://airform.io/your@email.com" method="post">
+  <input name="name" type="text"/>
   <textarea name="message"></textarea>
   <button>Send</button>
 </form>
 ```
 
-**Quick Tip:** The `action` attribute defines the location URL where the form's collected data should be sent when it is submitted. The `method` attribute defines which HTTP method to send the data with (should be "post"). All `input`, `select`, `textarea` elements whitin your form should have a `name` attribute.
+**Quick Tip:** The `action` attribute defines the location URL where the form's collected data should be sent when it is submitted. The `method` attribute defines which HTTP method to send the data with (should be "post"). All `input`, `select`, `textarea` elements within your form should have a `name` attribute.
 
 ## Features
 
 - No Server Management
-- Automated High Availabilty
+- Automated High Availability
 - Zero-Configuration
 - Safe Ship Mode
 - Unlimited Form Submissions
-- Cross Platform Support
+- Cross-Platform Support
 - More Productivity
 - Web Standards
 - Open Source
 
-## Packages
+## Extensions
 
-- [Angular Component](https://github.com/airform/airform/tree/master/packages/angular-airform)
-- [AngularJS Component](https://github.com/airform/airform/tree/master/packages/ng-airform)
-- [Aurelia Component](https://github.com/airform/airform/tree/master/packages/aurelia-airform)
-- [React Component](https://github.com/airform/airform/tree/master/packages/react-airform)
-- [Vue Component](https://github.com/airform/airform/tree/master/packages/vue-airform)
+- [Functional HTML forms for Angular Developers](https://github.com/airform/airform/tree/master/packages/angular-airform)
+- [Functional HTML forms for AngularJS Developers](https://github.com/airform/airform/tree/master/packages/ng-airform)
+- [Functional HTML forms for Aurelia Developers](https://github.com/airform/airform/tree/master/packages/aurelia-airform)
+- [Functional HTML forms for React Developers](https://github.com/airform/airform/tree/master/packages/react-airform)
+- [Functional HTML forms for Vue Developers](https://github.com/airform/airform/tree/master/packages/vue-airform)
 
 ## Contributing
 
