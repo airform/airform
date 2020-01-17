@@ -32,23 +32,23 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.803.19",
-    "@angular-devkit/build-ng-packagr": "^0.803.19",
+    "@angular-devkit/build-angular": "^0.803.23",
+    "@angular-devkit/build-ng-packagr": "^0.803.23",
     "@angular/common": "^8.2.14",
     "@angular/compiler": "^8.2.14",
     "@angular/compiler-cli": "^8.2.14",
     "@angular/core": "^8.2.14",
     "@angular/platform-browser": "^8.2.14",
     "@angular/platform-browser-dynamic": "^8.2.14",
-    "core-js": "^3.4.2",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.4.3",
+    "core-js": "^3.6.4",
+    "husky": "^4.0.10",
+    "lint-staged": "^9.5.0",
     "ng-packagr": "^5.7.1",
     "parcel-bundler": "^1.12.4",
-    "prettier-standard": "^15.0.1",
-    "systemjs": "^6.1.5",
-    "tsickle": "^0.37.1",
-    "typescript": "~3.5.3",
+    "prettier-standard": "^16.1.0",
+    "systemjs": "^6.1.9",
+    "tsickle": "^0.38.0",
+    "typescript": "^3.7.5",
     "zone.js": "^0.10.2"
   },
   "peerDependencies": {
@@ -61,7 +61,7 @@
     "server": "parcel example.html --open"
   },
   "engines": {
-    "node": "^12.13.0",
+    "node": "^12.14.0",
     "npm": "^6.13.0"
   },
   "prettier": {

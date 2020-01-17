@@ -37,18 +37,18 @@
     "react": "^16.11.0"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.19",
-    "@types/react": "^16.9.9",
+    "@types/jest": "^24.9.0",
+    "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.2",
-    "husky": "^3.0.9",
-    "lint-staged": "^9.4.2",
+    "husky": "^4.0.10",
+    "lint-staged": "^9.5.0",
     "parcel": "^1.12.4",
-    "prettier-standard": "^15.0.1",
-    "react-app-polyfill": "^1.0.4",
+    "prettier-standard": "^16.1.0",
+    "react-app-polyfill": "^1.0.5",
     "react-dom": "^16.11.0",
-    "tsdx": "^0.10.5",
+    "tsdx": "^0.12.3",
     "tslib": "^1.10.0",
-    "typescript": "^3.6.4"
+    "typescript": "^3.7.5"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -61,7 +61,7 @@
     "test": "tsdx test --env=jsdom"
   },
   "engines": {
-    "node": "^12.13.0",
+    "node": "^12.14.0",
     "npm": "^6.13.0"
   },
   "prettier": {
