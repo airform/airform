@@ -1,6 +1,6 @@
 {
   "name": "vue-airform",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Functional HTML forms for Vue Developers.",
   "homepage": "https://airform.io",
   "repository": "airform/airform",
@@ -33,22 +33,22 @@
     ".cache"
   ],
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.11",
+    "@types/jest": "^24.9.0",
     "@types/vue": "^2.0.0",
-    "@vue/cli-plugin-typescript": "^4.0.0",
-    "@vue/cli-plugin-unit-jest": "^4.0.0",
-    "@vue/cli-service": "^4.0.0",
+    "@vue/cli-plugin-typescript": "^4.1.2",
+    "@vue/cli-plugin-unit-jest": "^4.1.2",
+    "@vue/cli-service": "^4.1.2",
     "@vue/test-utils": "1.0.0-beta.29",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.4.3",
+    "husky": "^4.0.10",
+    "lint-staged": "^9.5.0",
     "parcel": "^1.12.4",
-    "prettier-standard": "^15.0.1",
+    "prettier-standard": "^16.1.0",
     "rimraf": "^3.0.0",
-    "typescript": "~3.5.3",
-    "vue-template-compiler": "^2.6.10"
+    "typescript": "^3.7.5",
+    "vue-template-compiler": "^2.6.11"
   },
   "peerDependencies": {
     "vue": ">=2"
@@ -60,7 +60,7 @@
     "test": "vue-cli-service test:unit index.spec.js"
   },
   "engines": {
-    "node": "^12.13.0",
+    "node": "^12.14.0",
     "npm": "^6.13.0"
   },
   "prettier": {
