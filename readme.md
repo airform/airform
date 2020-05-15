@@ -16,16 +16,16 @@ What if you could use a service that gives you full control over the form, yet d
 </form>
 ```
 
-**Quick Tip:** The `action` attribute defines the location URL where the form's collected data should be sent when it is submitted. The `method` attribute defines which HTTP method to send the data with (should be "post"). All `input`, `select`, `textarea` elements whitin your form should have a `name` attribute.
+**Quick Tip:** The `action` attribute defines the location URL where the form's collected data should be sent when it is submitted. The `method` attribute defines which HTTP method to send the data with (should be "post"). All `input`, `select`, `textarea` elements within your form should have a `name` attribute.
 
 ## Features
 
 - No Server Management
-- Automated High Availabilty
+- Automated High Availability
 - Zero-Configuration
 - Safe Ship Mode
 - Unlimited Form Submissions
-- Cross Platform Support
+- Cross-Platform Support
 - More Productivity
 - Web Standards
 - Open Source
