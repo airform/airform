@@ -34,7 +34,7 @@
     ".cache"
   ],
   "dependencies": {
-    "angular": "~1.7.9",
+    "angular": "~1.8.0",
     "angular-sanitize": "~1.7.9"
   },
   "devDependencies": {
@@ -48,7 +48,7 @@
     "typescript": "^3.7.5"
   },
   "peerDependencies": {
-    "angular": "~1.7.9",
+    "angular": "~1.8.0",
     "angular-sanitize": "~1.7.9"
   },
   "scripts": {
