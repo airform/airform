@@ -8,7 +8,7 @@ What if you could use a service that gives you full control over the form, yet d
 
 ## Usage
 
-```
+```html
 <form method="post" action="https://airform.io/your@email.com">
   <input type="text" name="name">
   <textarea name="message"></textarea>
