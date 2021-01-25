@@ -1,0 +1,92 @@
+{
+  "name": "ember-airform",
+  "version": "0.0.0",
+  "description": "Functional HTML forms for Ember Developers.",
+  "homepage": "https://airform.io",
+  "repository": "airform/airform",
+  "license": "MIT",
+  "author": "CJ Patoilo <cjpatoilo@gmail.com>",
+  "private": false,
+  "main": "dist/ember-airform.cjs.js",
+  "module": "dist/ember-airform.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "🐥",
+    "airform",
+    "html-forms",
+    "forms",
+    "mailchimp",
+    "mailer",
+    "mailgun",
+    "saas",
+    "sendgrid",
+    "sendmail",
+    "serverless",
+    "smtp",
+    "software-as-a-service"
+  ],
+  "ignore": [
+    "*.log",
+    ".DS_Store",
+    ".cache"
+  ],
+  "dependencies": {
+    "babel-plugin-htmlbars-inline-precompile": "^0.2.4",
+    "babel-preset-env": "^1.7.0",
+    "ember-resolver": "^4.5.5",
+    "ember-source": "^3.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "husky": "^3.0.9",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.4.2",
+    "parcel-bundler": "^1.12.4",
+    "prettier-standard": "^15.0.1",
+    "typescript": "^3.7.2"
+  },
+  "peerDependencies": {},
+  "scripts": {
+    "build": "",
+    "lint": "prettier-standard --check",
+    "server": "parcel example.html --open",
+    "test": "jest"
+  },
+  "engines": {
+    "node": "^10.17.0",
+    "yarn": "^1.19.0"
+  },
+  "prettier": {
+    "jsxSingleQuote": false,
+    "trailingComma": "all"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": [
+      "prettier-standard --format",
+      "git add"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 Chrome versions"
+            ]
+          },
+          "useBuiltIns": "true"
+        }
+      ]
+    ]
+  }
+}
