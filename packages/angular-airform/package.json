@@ -43,7 +43,7 @@
     "core-js": "^3.6.4",
     "husky": "^4.0.10",
     "lint-staged": "^9.5.0",
-    "ng-packagr": "^5.7.1",
+    "ng-packagr": "^10.1.1",
     "parcel-bundler": "^1.12.4",
     "prettier-standard": "^16.1.0",
     "systemjs": "^6.1.9",
