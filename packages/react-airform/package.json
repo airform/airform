@@ -42,7 +42,7 @@
     "@types/react-dom": "^16.9.2",
     "husky": "^4.0.10",
     "lint-staged": "^9.5.0",
-    "parcel": "^1.12.4",
+    "parcel": "^2.8.2",
     "prettier-standard": "^16.1.0",
     "react-app-polyfill": "^1.0.5",
     "react-dom": "^16.11.0",
